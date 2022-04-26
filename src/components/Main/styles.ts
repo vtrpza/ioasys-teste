@@ -1,5 +1,4 @@
 import styled, { css } from 'styled-components'
-import media from 'styled-media-query'
 
 export const Wrapper = styled.main`
   width: 100%;
@@ -20,9 +19,6 @@ export const Background = styled.div`
   color: #fff;
   width: 100%;
   height: 100%;
-  ${media.lessThan('large')`
-    height: 100%;
-  `}
 `
 
 export const Content = styled.div`
