@@ -9,10 +9,11 @@ export const Wrapper = styled.section`
   height: 16rem;
   ${({ theme }) => css`
     background-color: ${theme.colors.white};
-    margin-left: ${theme.spacings.small};
-    margin-bottom: ${theme.spacings.small};
+    margin-left: ${theme.spacings.xsmall};
+    margin-bottom: ${theme.spacings.xsmall};
   `}
   cursor: pointer;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.04), 0px 8px 80px rgba(0, 0, 0, 0.09);
 `
 
 export const ImageBox = styled.div`
