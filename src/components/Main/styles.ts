@@ -1,7 +1,12 @@
 import styled from 'styled-components'
+import media from 'styled-media-query'
 
 export const Wrapper = styled.main`
-  background-color: #06092b;
+  background: url(img/bg-main.svg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   color: #fff;
   width: 100%;
   height: 100%;
@@ -11,6 +16,9 @@ export const Wrapper = styled.main`
   text-align: center;
   align-items: center;
   justify-content: center;
+  ${media.lessThan('large')`
+    padding: 1.2rem;
+  `}
 `
 
 export const Logo = styled.img`

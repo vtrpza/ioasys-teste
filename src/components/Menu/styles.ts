@@ -5,6 +5,9 @@ export const Wrapper = styled.menu`
   display: flex;
   justify-content: space-between;
   width: 100%;
+  ${({ theme }) => css`
+    padding: ${theme.spacings.small} 0;
+  `}
 `
 
 export const UserWelcome = styled.div`
@@ -18,6 +21,7 @@ export const UserWelcome = styled.div`
   ${({ theme }) => css`
     span {
       font-size: ${theme.font.sizes.xsmall};
+      color: ${theme.colors.black};
       ${media.lessThan('large')`
             display: none;
         `}
