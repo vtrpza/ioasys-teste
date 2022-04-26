@@ -9,6 +9,8 @@ export const Wrapper = styled.section`
   height: 16rem;
   ${({ theme }) => css`
     background-color: ${theme.colors.white};
+    margin-left: ${theme.spacings.small};
+    margin-bottom: ${theme.spacings.small};
   `}
   cursor: pointer;
 `
@@ -47,6 +49,8 @@ export const Info = styled.div`
 export const PrimaryInfo = styled.div`
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
+  text-align: left;
   ${({ theme }) => css`
     padding: ${theme.spacings.xsmall} 0;
   `}
@@ -55,6 +59,8 @@ export const PrimaryInfo = styled.div`
 export const SecondaryInfo = styled.div`
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
+  text-align: left;
   ${({ theme }) => css`
     padding: ${theme.spacings.small} 0;
   `}

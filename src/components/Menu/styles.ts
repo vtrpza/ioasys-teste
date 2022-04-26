@@ -16,7 +16,7 @@ export const UserWelcome = styled.div`
   ${media.lessThan('large')`
     justify-content: end;
     `}
-  width: 14rem;
+  width: 20rem;
   align-items: center;
   ${({ theme }) => css`
     span {

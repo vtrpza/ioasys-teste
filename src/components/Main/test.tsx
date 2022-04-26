@@ -7,6 +7,6 @@ describe('<Main/>', () => {
   it('should render the welcome message`s username from the menu', () => {
     renderWithTheme(<Main />)
 
-    expect(screen.getByText(/vitor/i)).toBeInTheDocument
+    expect(screen.getByText(/vitor henrique/i)).toBeInTheDocument
   })
 })
