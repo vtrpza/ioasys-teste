@@ -19,7 +19,7 @@ export const Background = styled.div`
   background-size: cover;
   color: #fff;
   width: 100%;
-  height: 100vh;
+  height: 100%;
   ${media.lessThan('large')`
     height: 100%;
   `}
