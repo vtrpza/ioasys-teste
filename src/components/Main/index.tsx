@@ -102,24 +102,23 @@ const props = [
 ]
 
 const Main = () => (
-  <S.Wrapper>
-    <S.Background>
-      <Menu userName="Vitor Henrique" />
-      <S.Content>
-        {props.map((el, i) => (
-          <BookCard
-            key={i}
-            title={el.title}
-            author={el.author}
-            pages={el.pages}
-            published={el.published}
-            publisher={el.publisher}
-            img={el.img}
-          />
-        ))}
-      </S.Content>
-    </S.Background>
-  </S.Wrapper>
+  <S.Background>
+    <Menu userName="Vitor Henrique" />
+
+    <S.Content>
+      {props.map((el, i) => (
+        <BookCard
+          key={i}
+          title={el.title}
+          author={el.author}
+          pages={el.pages}
+          published={el.published}
+          publisher={el.publisher}
+          img={el.img}
+        />
+      ))}
+    </S.Content>
+  </S.Background>
 )
 
 export default Main

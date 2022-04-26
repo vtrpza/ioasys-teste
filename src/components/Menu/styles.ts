@@ -4,9 +4,15 @@ import media from 'styled-media-query'
 export const Wrapper = styled.menu`
   display: flex;
   justify-content: space-between;
-  width: 100%;
+  max-width: 100%;
+  ${media.lessThan('large')`
+  margin-left: 0;
+  margin-right: 0;
+  `}
+  margin-left: 13rem;
+  margin-right: 11rem;
   ${({ theme }) => css`
-    padding: ${theme.spacings.small};
+    padding: ${theme.spacings.large};
   `}
 `
 
