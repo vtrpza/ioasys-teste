@@ -35,15 +35,20 @@ describe('<Main/>', () => {
       }
 
       .c1 {
-        font-size: 2.5rem;
+        width: 15rem;
+        margin-bottom: 2rem;
       }
 
       .c2 {
+        font-size: 2.5rem;
+      }
+
+      .c3 {
         font-size: 2rem;
         font-weight: 400;
       }
 
-      .c3 {
+      .c4 {
         margin-top: 3rem;
         width: min(30rem,100%);
       }
@@ -51,19 +56,24 @@ describe('<Main/>', () => {
       <main
         class="c0"
       >
-        <h1
+        <img
+          alt="Imagem de um átomo rosa"
           class="c1"
+          src="/img/icon-512.png"
+        />
+        <h1
+          class="c2"
         >
           React Starter
         </h1>
         <h2
-          class="c2"
+          class="c3"
         >
           TypeScript, ReactJS, NextJS & Styled Components
         </h2>
         <img
           alt="Imagem de um dev olhando para tela com código"
-          class="c3"
+          class="c4"
           src="/img/hero-illustration.svg"
         />
       </main>
