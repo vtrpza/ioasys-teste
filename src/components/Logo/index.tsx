@@ -2,9 +2,10 @@ import * as S from './styles'
 
 export type LogoProps = {
   color?: 'black' | 'white'
+  title?: string
 }
 
-const Logo = ({ color = 'white' }: LogoProps) => (
+const Logo = ({ color = 'white', title = 'Books' }: LogoProps) => (
   <S.Wrapper>
     <S.Content color={color}>
       <svg
@@ -21,7 +22,7 @@ const Logo = ({ color = 'white' }: LogoProps) => (
           fill="currentColor"
         />
       </svg>
-      <S.Title>Books</S.Title>
+      <S.Title color={color}>{title}</S.Title>
     </S.Content>
   </S.Wrapper>
 )
