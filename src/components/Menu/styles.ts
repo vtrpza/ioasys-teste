@@ -6,13 +6,14 @@ export const Wrapper = styled.menu`
   justify-content: space-between;
   width: 100%;
   ${({ theme }) => css`
-    padding: ${theme.spacings.small} 0;
+    padding: ${theme.spacings.small};
   `}
 `
 
 export const UserWelcome = styled.div`
   display: flex;
   justify-content: space-between;
+
   ${media.lessThan('large')`
     justify-content: end;
     `}

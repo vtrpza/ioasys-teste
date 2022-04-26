@@ -2,6 +2,16 @@ import styled, { css } from 'styled-components'
 import media from 'styled-media-query'
 
 export const Wrapper = styled.main`
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+`
+
+export const Background = styled.div`
   background: url(img/bg-main.svg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -10,14 +20,8 @@ export const Wrapper = styled.main`
   color: #fff;
   width: 100%;
   height: 100vh;
-  padding: 3rem;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  align-items: center;
-  justify-content: center;
   ${media.lessThan('large')`
-    padding: 1.2rem;
+    height: 100%;
   `}
 `
 
