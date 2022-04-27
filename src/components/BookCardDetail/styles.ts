@@ -1,4 +1,5 @@
 import styled, { css } from 'styled-components'
+import media from 'styled-media-query'
 import { BookCardDetailProps } from '.'
 
 type OverlayProps = Pick<BookCardDetailProps, 'notShow' | 'onClick'>
@@ -32,7 +33,11 @@ export const Wrapper = styled.div`
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-
+  ${media.lessThan('large')`
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+  `}
   ${({ theme }) => css`
     background-color: ${theme.colors.white};
     padding: ${theme.spacings.medium};
@@ -44,6 +49,10 @@ export const ImgHolder = styled.div`
   height: 51.2rem;
   ${({ theme }) => css`
     margin-right: ${theme.spacings.xlarge};
+  `}
+  ${media.lessThan('large')`
+    width: 24rem;
+    height: 35rem;
   `}
   img {
     width: 100%;
