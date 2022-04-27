@@ -5,7 +5,7 @@ type OverlayProps = Pick<BookCardDetailProps, 'notShow'>
 
 const wrapperModifiers = {
   show: () => css`
-    display: 'none';
+    display: none;
   `
 }
 

@@ -7,6 +7,7 @@ export type BookCardProps = {
   publisher: string
   published: string
   img: string
+  onClick?: React.MouseEventHandler<HTMLButtonElement>
 }
 
 const BookCard = ({
@@ -15,9 +16,10 @@ const BookCard = ({
   pages,
   publisher,
   published,
-  img
+  img,
+  onClick
 }: BookCardProps) => (
-  <S.Wrapper>
+  <S.Wrapper onClick={onClick}>
     <S.ImageBox>
       <img src={img} alt={title} />
     </S.ImageBox>
