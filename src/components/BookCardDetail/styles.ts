@@ -1,7 +1,7 @@
 import styled, { css } from 'styled-components'
 import { BookCardDetailProps } from '.'
 
-type OverlayProps = Pick<BookCardDetailProps, 'notShow'>
+type OverlayProps = Pick<BookCardDetailProps, 'notShow' | 'onClick'>
 
 const wrapperModifiers = {
   show: () => css`
