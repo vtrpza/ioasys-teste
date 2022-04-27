@@ -13,7 +13,7 @@ const props = {
 }
 
 describe('<BookCard/>', () => {
-  it('should render  the heading', () => {
+  it('should render the heading', () => {
     const { container } = renderWithTheme(<BookCard {...props} />)
 
     expect(
