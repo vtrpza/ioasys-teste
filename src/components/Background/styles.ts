@@ -19,6 +19,24 @@ const modifier = {
   `
 }
 
+export const PaginationContainer = styled.div`
+  width: 20rem;
+  display: block;
+  display: flex;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: space-between;
+  a {
+    cursor: pointer;
+  }
+  ${({ theme }) => css`
+    color: ${theme.colors.black};
+    margin-top: ${theme.spacings.medium};
+    padding-bottom: ${theme.spacings.large};
+  `}
+`
+
 export const Background = styled.div<backgroundProps>`
   ${({ bg }) => css`
     ${!!bg && modifier[bg]}

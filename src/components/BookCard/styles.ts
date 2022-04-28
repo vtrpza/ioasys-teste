@@ -38,7 +38,7 @@ export const Info = styled.div`
   flex-direction: column;
   justify-content: space-between;
   max-width: 50%;
-  overflow: auto;
+  overflow: hidden;
   ${({ theme }) =>
     css`
       padding-left: ${theme.spacings.xxsmall};
