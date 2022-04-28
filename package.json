@@ -48,7 +48,7 @@
     "@storybook/addon-links": "^6.1.18",
     "@storybook/react": "^6.3.6",
     "@testing-library/jest-dom": "^5.11.9",
-    "@testing-library/react": "^11.2.5",
+    "@testing-library/react": "^12.1.5",
     "@types/jest": "^26.0.20",
     "@types/next-auth": "^3.7.0",
     "@types/node": "^16.4.10",
