@@ -8,6 +8,7 @@ import BookCardDetail, { BookCardDetailProps } from 'components/BookCardDetail'
 import { useRouter } from 'next/router'
 import { useEffect, useState } from 'react'
 import Menu from 'components/Menu'
+import { GetServerSideProps } from 'next'
 
 export type BooksProps = {
   books: {
@@ -69,7 +70,7 @@ export default function Home({ books }: BooksProps) {
   return <h1> Unauthorized</h1>
 }
 
-export async function getServerSideProps(context) {
+export const getServerSideProps: GetServerSideProps = async (context) => {
   const userData = await getSession(context)
   const myHeaders = new Headers()
   const token = userData?.auth_key
@@ -84,7 +85,7 @@ export async function getServerSideProps(context) {
     `${process.env.NEXT_PUBLIC_API}/books?` +
       new URLSearchParams({
         page: '1',
-        amount: '25'
+        amount: '15'
       }),
     {
       method: 'GET',
