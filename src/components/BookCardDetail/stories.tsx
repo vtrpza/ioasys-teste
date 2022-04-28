@@ -5,18 +5,19 @@ export default {
   title: 'Book Card Detail',
   component: BookCardDetail,
   args: {
-    title: 'Change by Design Second line example',
-    author: 'Vitor Pouza',
-    pages: '423',
-    publisher: 'PZA inc',
-    published: '21/04/2022',
-    language: 'PT-BR',
-    originalTitle: 'Teste livro',
-    isbn10: '242',
-    isbn13: '242',
-    img: './img/Book-full.png',
-    review:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pellentesque ante ut erat blandit, ut vulputate massa eleifend. In vulputate euismod nisl. Nam orci erat, luctus sed enim et, tristique malesuada urna. Nullam posuere suscipit felis, tincidunt viverra turpis pellentesque eu. Duis blandit sed sem eu commodo. Mauris fringilla id ipsum in condimentum. Curabitur non odio tristique, lobortis lectus at, vehicula massa. Integer odio ex, consequat non ipsum nec, tempus tempor metus. Cras facilisis ante et efficitur vehicula. Nunc finibus ornare facilisis. Maecenas turpis metus, blandit ac gravida eget, faucibus et elit. Cras est felis, commodo at gravida a, feugiat eget eros. Maecenas sollicitudin neque id arcu varius, nec sodales libero malesuada.'
+    id: '2342342342',
+    title: '2342342342',
+    authors: ['2342342342', '23434'],
+    pageCount: '2342342342',
+    publisher: '2342342342',
+    published: '2342342342',
+    category: '2342342342',
+    language: '2342342342',
+    imageUrl: './img/Book-full.png',
+    description: '2342342342',
+    isbn10: '2342342342',
+    isbn13: '2342342342',
+    show: '2342342342'
   }
 } as Meta
 

@@ -2,12 +2,15 @@ import { Story, Meta } from '@storybook/react/types-6-0'
 import BookCard from '.'
 
 const props = {
-  title: 'Livro 1',
-  author: 'Vitor Pouza',
-  pages: '49',
-  publisher: 'PZA Inc',
-  published: '21 abril 2022',
-  img: './img/Book 1.png'
+  id: '2',
+  title: '23423',
+  authors: ['te', 'te'],
+  pageCount: '12312',
+  publisher: '12312',
+  published: '12312',
+  category: '12312',
+  language: '12312',
+  imageUrl: './img/Book 1.png'
 }
 
 export default {
