@@ -1,20 +1,10 @@
 import styled, { css } from 'styled-components'
 import media from 'styled-media-query'
-import { BookCardDetailProps } from '.'
 
-type OverlayProps = Pick<BookCardDetailProps, 'notShow' | 'onClick'>
-
-const wrapperModifiers = {
-  show: () => css`
-    display: none;
-  `
-}
-
-export const Overlay = styled.div<OverlayProps>`
-  ${({ theme, notShow }) => css`
+export const Overlay = styled.div`
+  ${({ theme }) => css`
     background-color: rgba(51, 51, 51, 0.6);
     z-index: ${theme.layers.modal};
-    ${notShow && wrapperModifiers.show()}
   `}
   position: fixed;
   left: 0;

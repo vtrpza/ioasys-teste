@@ -27,20 +27,18 @@ export const ImageBox = styled.div`
     width: 100%;
     height: 100%;
     object-fit: cover;
-    box-shadow:
-  0px 1.8px 2.2px rgba(0, 0, 0, 0.017),
-  0px 4.3px 5.3px rgba(0, 0, 0, 0.024),
-  0px 8.1px 10px rgba(0, 0, 0, 0.03),
-  0px 14.5px 17.9px rgba(0, 0, 0, 0.036),
-  0px 27.2px 33.4px rgba(0, 0, 0, 0.043),
-  0px 65px 80px rgba(0, 0, 0, 0.06)
-;
+    box-shadow: 0px 1.8px 2.2px rgba(0, 0, 0, 0.017),
+      0px 4.3px 5.3px rgba(0, 0, 0, 0.024), 0px 8.1px 10px rgba(0, 0, 0, 0.03),
+      0px 14.5px 17.9px rgba(0, 0, 0, 0.036),
+      0px 27.2px 33.4px rgba(0, 0, 0, 0.043), 0px 65px 80px rgba(0, 0, 0, 0.06);
+  }
 `
-
 export const Info = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  max-width: 50%;
+  overflow: auto;
   ${({ theme }) =>
     css`
       padding-left: ${theme.spacings.xxsmall};
@@ -63,7 +61,7 @@ export const SecondaryInfo = styled.div`
   justify-content: flex-start;
   text-align: left;
   ${({ theme }) => css`
-    padding: ${theme.spacings.small} 0;
+    padding: ${theme.spacings.xxsmall} 0;
   `}
 `
 

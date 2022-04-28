@@ -48,6 +48,8 @@ exports[`<BookCard/> should render the heading 1`] = `
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  max-width: 50%;
+  overflow: auto;
   padding-left: 0.8rem;
 }
 
@@ -80,7 +82,7 @@ exports[`<BookCard/> should render the heading 1`] = `
   -ms-flex-pack: start;
   justify-content: flex-start;
   text-align: left;
-  padding: 2.4rem 0;
+  padding: 0.8rem 0;
 }
 
 .c4 {
@@ -121,7 +123,6 @@ exports[`<BookCard/> should render the heading 1`] = `
   >
     <img
       alt="Livro 1"
-      src="./img/Book 1.png"
     />
   </div>
   <div
@@ -146,9 +147,7 @@ exports[`<BookCard/> should render the heading 1`] = `
     >
       <p
         class="c7"
-      >
-        49
-      </p>
+      />
       <p
         class="c8"
       >

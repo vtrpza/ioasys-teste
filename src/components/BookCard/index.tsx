@@ -1,35 +1,39 @@
 import * as S from './styles'
 
 export type BookCardProps = {
-  title: string
-  author: string
-  pages: string
-  publisher: string
-  published: string
-  img: string
+  id?: string
+  title?: string
+  authors?: string[]
+  pageCount?: string
+  publisher?: string
+  published?: string
+  category?: string
+  language?: string
+  imageUrl?: string
+
   onClick?: React.MouseEventHandler<HTMLButtonElement>
 }
 
 const BookCard = ({
   title,
-  author,
-  pages,
+  authors,
+  pageCount,
   publisher,
   published,
-  img,
+  imageUrl,
   onClick
 }: BookCardProps) => (
   <S.Wrapper onClick={onClick}>
     <S.ImageBox>
-      <img src={img} alt={title} />
+      <img src={imageUrl} alt={title} />
     </S.ImageBox>
     <S.Info>
       <S.PrimaryInfo>
         <S.Title>{title}</S.Title>
-        <S.Author>{author}</S.Author>
+        <S.Author>{authors.map((el) => el)}</S.Author>
       </S.PrimaryInfo>
       <S.SecondaryInfo>
-        <S.Pages>{pages}</S.Pages>
+        <S.Pages>{pageCount}</S.Pages>
         <S.Publisher>{publisher}</S.Publisher>
         <S.Published>{published}</S.Published>
       </S.SecondaryInfo>

@@ -2,21 +2,20 @@ import { screen } from '@testing-library/react'
 import { renderWithTheme } from 'utils/tests/helpers'
 
 import BookCardDetail from '.'
-
 const props = {
+  id: 'asdad',
   title: 'Change by Design Second line example',
-  author: 'Vitor Pouza',
-  pages: '423',
-  publisher: 'PZA inc',
-  published: '21/04/2022',
-  language: 'PT-BR',
-  originalTitle: 'Teste livro',
-  isbn10: '242',
-  isbn13: '242',
-  img: './img/Book-full.png',
-  notShow: false,
-  review:
-    'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pellentesque ante ut erat blandit, ut vulputate massa eleifend. In vulputate euismod nisl. Nam orci erat, luctus sed enim et, tristique malesuada urna. Nullam posuere suscipit felis, tincidunt viverra turpis pellentesque eu. Duis blandit sed sem eu commodo. Mauris fringilla id ipsum in condimentum. Curabitur non odio tristique, lobortis lectus at, vehicula massa. Integer odio ex, consequat non ipsum nec, tempus tempor metus. Cras facilisis ante et efficitur vehicula. Nunc finibus ornare facilisis. Maecenas turpis metus, blandit ac gravida eget, faucibus et elit. Cras est felis, commodo at gravida a, feugiat eget eros. Maecenas sollicitudin neque id arcu varius, nec sodales libero malesuada.'
+  authors: ['Vitor Pouza'],
+  pageCount: '1123123',
+  publisher: '123123123',
+  published: '123123',
+  category: '312312312',
+  language: 'asdasdasdasd',
+  imageUrl: 'asdasdasdasd',
+  description: 'asdasdasdasd',
+  isbn10: 'asdasdasdasd',
+  isbn13: 'asdasdasdasd',
+  show: true
 }
 
 describe('<BookCardDetail/>', () => {
@@ -26,11 +25,6 @@ describe('<BookCardDetail/>', () => {
     expect(
       screen.getByRole('heading', {
         name: /Change by Design Second line example/i
-      })
-    ).toBeInTheDocument()
-    expect(
-      screen.getByRole('heading', {
-        name: /Vitor Pouza/i
       })
     ).toBeInTheDocument()
   })

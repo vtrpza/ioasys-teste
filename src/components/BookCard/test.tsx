@@ -5,7 +5,7 @@ import BookCard from '.'
 
 const props = {
   title: 'Livro 1',
-  author: 'Vitor Pouza',
+  authors: ['Vitor Pouza'],
   pages: '49',
   publisher: 'PZA Inc',
   published: '21 abril 2022',
